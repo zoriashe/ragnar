@@ -59,5 +59,23 @@ ul, li {
 
 .flex-center {
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 47px;
+  color: $white;
+  text-align: center;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.violet {
+  color: $violet;
+}
+
+.orange {
+  color: $orange;
 }
