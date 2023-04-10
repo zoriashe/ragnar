@@ -281,14 +281,14 @@
             <h3>Here are the God of War (PC) System Requirements</h3>
 
             <div class="explore-switch flex flex-center">
-              <div class="explore-switch__title active">Minimal</div>
+              <div class="explore-switch__title active" data-requirements="minimal">Minimal</div>
 
               <div class="explore-switch__checkbox">
-                <input type="checkbox" name="Requirements" class="checkbox" />
+                <input type="checkbox" name="requirements" class="checkbox" />
                 <span></span>
               </div>
 
-              <div class="explore-switch__title">Recommended</div>
+              <div class="explore-switch__title" data-requirements="recommended">Recommended</div>
             </div>
 
             <div class="explore-info flex flex-center">
@@ -345,14 +345,14 @@
             <h3>God of War for PS4</h3>
 
             <div class="explore-switch flex flex-center">
-              <div class="explore-switch__title active">Standart</div>
+              <div class="explore-switch__title active" data-versions="standart">Standart</div>
 
               <div class="explore-switch__checkbox">
                 <input type="checkbox" name="versions" class="checkbox" />
                 <span></span>
               </div>
 
-              <div class="explore-switch__title">Limited</div>
+              <div class="explore-switch__title" data-versions="limited">Limited</div>
             </div>
 
             <div class="explore-item__price">15.99$</div>
@@ -370,7 +370,7 @@
               <div class="explore-description">
                 <ul class="explore-list active" id="standart">
                   <li><span class="violet">Platform</span>: PS4</li>
-                  <li><span class="violet">Premiere</span>: 20.4.2018</li>
+                  <li><span class="violet">Premiere</span>: 20.04.2018</li>
                   <li>
                     <span class="violet">Publisher</span>: Sony Interactive
                     Entertainment Europe
@@ -389,7 +389,7 @@
 
                 <ul class="explore-list" id="limited">
                   <li><span class="violet">Platform</span>: PS4</li>
-                  <li><span class="violet">Premiere</span>: 20.4.2018</li>
+                  <li><span class="violet">Premiere</span>: 17.04.2018</li>
                   <li>
                     <span class="violet">Publisher</span>: Sony Interactive
                     Entertainment Europe
@@ -548,42 +548,6 @@
             </div>
           </div>
         </div>
-
-        <div class="swiper-button-prev swiper-button flex flex-center">
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            id="_24x24_On-Light_Arrow-Left"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect id="view-box" width="16" height="16" fill="none" />
-            <path
-              id="Shape"
-              d="M7.92212 0.579625L0.649395 7.8166C0.513007 7.95226 0.436401 8.13637 0.436401 8.32828C0.436401 8.52025 0.513056 8.70431 0.649444 8.84002L7.92217 16.0766C8.2062 16.3592 8.66666 16.3592 8.95068 16.0766C9.23466 15.794 9.2347 15.3358 8.95068 15.0532L2.19223 8.32828L8.95068 1.60305C9.09269 1.46174 9.16367 1.27653 9.16367 1.09131C9.16367 0.906099 9.09269 0.720886 8.95063 0.579576C8.66661 0.297005 8.20615 0.297005 7.92212 0.579625Z"
-              transform="translate(14.75 17.75) rotate(0)"
-              fill="inherit"
-            />
-          </svg>
-        </div>
-
-        <div class="swiper-button-next swiper-button flex flex-center">
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            id="_24x24_On-Light_Arrow-Left"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect id="view-box" width="16" height="16" fill="none" />
-            <path
-              id="Shape"
-              d="M7.92212 0.579625L0.649395 7.8166C0.513007 7.95226 0.436401 8.13637 0.436401 8.32828C0.436401 8.52025 0.513056 8.70431 0.649444 8.84002L7.92217 16.0766C8.2062 16.3592 8.66666 16.3592 8.95068 16.0766C9.23466 15.794 9.2347 15.3358 8.95068 15.0532L2.19223 8.32828L8.95068 1.60305C9.09269 1.46174 9.16367 1.27653 9.16367 1.09131C9.16367 0.906099 9.09269 0.720886 8.95063 0.579576C8.66661 0.297005 8.20615 0.297005 7.92212 0.579625Z"
-              transform="translate(14.75 17.75) rotate(0)"
-              fill="inherit"
-            />
-          </svg>
-        </div>
       </div>
     </section>
 
@@ -621,10 +585,64 @@
                 architecto assumenda!
               </p>
             </div>
-            
           </div>
         </div>
       </div>
     </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top flex">
+          <ul class="footer-menu flex flex-center">
+            <li>
+              <a class="menu-link" href="#editions">editions</a>
+            </li>
+            <li>
+              <a class="menu-link" href="#controller">controller</a>
+            </li>
+            <li>
+              <a class="menu-link" href="#about">ABOUT GAME</a>
+            </li>
+            <li>
+              <a class="menu-link" href="#explore">Explore</a>
+            </li>
+            <li>
+              <a class="menu-link" href="#news">news</a>
+            </li>
+            <li>
+              <a class="menu-link" href="#faq">FAQ</a>
+            </li>
+          </ul>
+
+          <div class="footer-lang flex">
+            <span>Language: </span>
+
+            <div class="footer-lang__list">
+              <div class="footer-lang__current">english</div>
+
+              <div class="footer-lang__content">
+                <div class="footer-lang__content-item">Russian</div>
+                <div class="footer-lang__content-item">English</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-info">
+          Download of this product is subject to the PlayStation Network Terms
+          of Service and our Software Usage Terms plus any specific additional
+          conditions applying to this product. If you do not wish to accept
+          these terms, do not download this product. See Terms of Service for
+          more important information.
+        </div>
+
+        <div class="footer-icon">
+          <img src="./assets/images/ps-logo.png" alt="" />
+        </div>
+
+        <div class="footer-year">2022</div>
+        <div class="footer-rights">Empty</div>
+      </div>
+    </footer>
   </body>
 </html>
