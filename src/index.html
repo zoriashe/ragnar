@@ -44,7 +44,10 @@
             <nav class="header-menu__list">
               <ul class="flex flex-center">
                 <li>
-                  <a class="header-menu__link menu-link" href="#editions"
+                  <a
+                    data-text="editions"
+                    class="header-menu__link menu-link"
+                    href="#editions"
                     >editions</a
                   >
                 </li>
@@ -99,8 +102,18 @@
                     </svg>
 
                     <div class="header-menu__languages">
-                      <div class="header-menu__language">Русский</div>
-                      <div class="header-menu__language">English</div>
+                      <div
+                        class="header-menu__language language"
+                        data-lang="ru"
+                      >
+                        Русский
+                      </div>
+                      <div
+                        class="header-menu__language language"
+                        data-lang="en"
+                      >
+                        English
+                      </div>
                     </div>
                   </div>
                 </li>
@@ -144,16 +157,16 @@
               drawing to a close which will begin the prophesied Ragnarök.
             </div>
 
-            <div class="description-button">buy NOW</div>
+            <div class="description-button button-buy" data-value="0">buy NOW</div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section section-editions" id="editions">
+    <section class="section hidden section-editions" id="editions">
       <div class="container">
         <div class="editions">
-          <h2>Editions</h2>
+          <h2 data-text="editions">Editions</h2>
 
           <div class="editions-list">
             <div class="editions-item">
@@ -174,7 +187,7 @@
 
               <div class="editions-item__price">19.99$</div>
 
-              <div class="editions-item__btn button-buy">buy now</div>
+              <div class="editions-item__btn button-buy" data-value="0">buy now</div>
             </div>
 
             <div class="editions-item">
@@ -195,7 +208,7 @@
 
               <div class="editions-item__price">18.99$</div>
 
-              <div class="editions-item__btn button-buy">buy now</div>
+              <div class="editions-item__btn button-buy" data-value="1">buy now</div>
             </div>
 
             <div class="editions-item">
@@ -216,14 +229,14 @@
 
               <div class="editions-item__price">29.99$</div>
 
-              <div class="editions-item__btn button-buy">buy now</div>
+              <div class="editions-item__btn button-buy" data-value="2">buy now</div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section section-dual" id="controller">
+    <section class="section hidden section-dual" id="controller">
       <div class="container">
         <h2>DualSense</h2>
 
@@ -254,7 +267,7 @@
       </div>
     </section>
 
-    <section class="section section-about" id="about">
+    <section class="section hidden section-about" id="about">
       <h2>About Game</h2>
 
       <div class="video">
@@ -272,7 +285,7 @@
       </div>
     </section>
 
-    <setcion class="section section-explore" id="explore">
+    <setcion class="section hidden section-explore" id="explore">
       <div class="container">
         <h2 class="explore-title">Explore the God of War series</h2>
 
@@ -281,14 +294,24 @@
             <h3>Here are the God of War (PC) System Requirements</h3>
 
             <div class="explore-switch flex flex-center">
-              <div class="explore-switch__title active" data-requirements="minimal">Minimal</div>
+              <div
+                class="explore-switch__title active"
+                data-requirements="minimal"
+              >
+                Minimal
+              </div>
 
               <div class="explore-switch__checkbox">
                 <input type="checkbox" name="requirements" class="checkbox" />
                 <span></span>
               </div>
 
-              <div class="explore-switch__title" data-requirements="recommended">Recommended</div>
+              <div
+                class="explore-switch__title"
+                data-requirements="recommended"
+              >
+                Recommended
+              </div>
             </div>
 
             <div class="explore-info flex flex-center">
@@ -336,7 +359,7 @@
                   <li><span class="violet">DEDICATED VIDEO RAM</span>: 6 GB</li>
                 </ul>
 
-                <div class="explore-button">buy now</div>
+                <div class="explore-button button-buy" data-value="0">buy now</div>
               </div>
             </div>
           </div>
@@ -345,14 +368,21 @@
             <h3>God of War for PS4</h3>
 
             <div class="explore-switch flex flex-center">
-              <div class="explore-switch__title active" data-versions="standart">Standart</div>
+              <div
+                class="explore-switch__title active"
+                data-versions="standart"
+              >
+                Standart
+              </div>
 
               <div class="explore-switch__checkbox">
                 <input type="checkbox" name="versions" class="checkbox" />
                 <span></span>
               </div>
 
-              <div class="explore-switch__title" data-versions="limited">Limited</div>
+              <div class="explore-switch__title" data-versions="limited">
+                Limited
+              </div>
             </div>
 
             <div class="explore-item__price">15.99$</div>
@@ -406,7 +436,7 @@
                   </li>
                 </ul>
 
-                <div class="explore-button">buy now</div>
+                <div class="explore-button button-buy" data-value="0">buy now</div>
               </div>
             </div>
           </div>
@@ -414,7 +444,7 @@
       </div>
     </setcion>
 
-    <section class="section section-news" id="news">
+    <section class="section hidden section-news" id="news">
       <h2>News</h2>
 
       <div class="news swiper flex flex-center">
@@ -551,7 +581,7 @@
       </div>
     </section>
 
-    <section class="section section-faq" id="faq">
+    <section class="section hidden section-faq" id="faq">
       <div class="container">
         <h2>FAQ</h2>
 
@@ -621,8 +651,12 @@
               <div class="footer-lang__current">english</div>
 
               <div class="footer-lang__content">
-                <div class="footer-lang__content-item">Russian</div>
-                <div class="footer-lang__content-item">English</div>
+                <div class="footer-lang__content-item language" data-lang="ru">
+                  Russian
+                </div>
+                <div class="footer-lang__content-item language" data-lang="en">
+                  English
+                </div>
               </div>
             </div>
           </div>
@@ -644,5 +678,76 @@
         <div class="footer-rights">Empty</div>
       </div>
     </footer>
+
+    <div class="modal">
+      <div class="modal-wrapper">
+        <div class="modal-title">GOD OF WAR RAGNAROK</div>
+        <div class="modal-version"></div>
+
+        <form class="form">
+          <div class="form-group full">
+            <label for="card">CREDIT CARD:</label>
+            <input
+              type="text"
+              required
+              placeholder="0000 0000 0000 0000"
+              id="card"
+            />
+          </div>
+          <div class="form-group">
+            <label for="expire">expire:</label>
+            <input type="text" required placeholder="MM/YY" id="expire" />
+          </div>
+          <div class="form-group">
+            <label for="ccv">CCV:</label>
+            <input type="text" required placeholder="***" id="ccv" />
+          </div>
+          <div class="form-group full">
+            <label for="instant">INSTANT:</label>
+            <input
+              type="text"
+              required
+              placeholder="Dave Schmitz"
+              id="instant"
+            />
+          </div>
+
+          <div class="form-checkbox flex flex-center">
+            <input
+              type="checkbox"
+              class="check"
+              name="agreement"
+              id="agreement"
+              required
+            />
+            <span class="check"></span>
+            <label for="agreement">
+              I agree with the <span class="red">rules</span> of the site
+            </label>
+          </div>
+
+          <div class="modal-description">
+            Download of this product is subject to the PlayStation Network
+            Terms of Service and our Software Usage Terms plus any specific
+            additional conditions applying to this product. If you do not wish
+            to accept these terms, do not download this product. See Terms of
+            Service for more important information.
+          </div>
+
+          <div class="modal-total flex flex-center">
+            <div class="modal-total__text">YOUR TOTAL ORDER:</div>
+            <div class="modal-total__price">19.99$</div>
+          </div>
+
+          <button type="submit" class="modal-submit">
+            buy NOW
+          </button>
+        </form>
+
+        <div class="modal-close">x</div>
+      </div>
+    </div>
+
+    <div class="overlay"></div>
   </body>
 </html>
