@@ -1,2 +1,2 @@
 # ragnar
-## Практика scss+html+js+animation по видео, деплой для друзей
+## Практика HTML JavaScript SASS+Animation
